@@ -49,6 +49,17 @@ const ListsScreen = props => {
               }
               // assign results array to lists state variable
               setLists(results);
+              /*
+                id: 1
+                 name: DMC List
+                 store: Giant
+                 date: 2022-11-2
+              
+                id: 2
+                 name: Birthday List
+                 store: Wawa
+                 date: 2021-6-20
+                 */
             } else {
               // if no rows of data were returned,
               // set lists state variable to an empty array
