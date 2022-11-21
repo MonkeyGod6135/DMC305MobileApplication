@@ -79,6 +79,10 @@ const ListsScreen = props => {
     <View style={styles.container}>
       <View>
         <FlatList 
+        accessible={true}
+        accessibilityRole='button'
+        accessibilityLabel='Tap to start shooping screen'
+        accessibilityHint='goes to lists screen'
           data={lists}
           renderItem={({item}) => <List post={item} />}
           keyExtractor={item => item.id}
@@ -86,6 +90,10 @@ const ListsScreen = props => {
       </View>
         <View style={styles.bottom}>
             <TouchableOpacity 
+              accessible={true}
+              accessibilityRole='button'
+              accessibilityLabel='Tap to add list'
+              accessibilityHint='does to add list screen'
                 style={styles.button}
                 onPress={() => navigation.navigate('Add List')}
                 >
